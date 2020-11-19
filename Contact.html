@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="JS/script1.js" type="text/javascript"></script>
+    <link href="Styles/style.css" type="text/css" rel="stylesheet"/>
+	<title> Contact </title>
+</head>
+   <body>
+<!-- Navigation links -->
+  <div id="Navigation">
+  <a href="About.html">About</a>
+  <a href="Skills.html">Skills</a>
+  <a href="Projects.html">Projects</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Contact.html">Contact</a>
+</div>
+
+<div id="Layout">
+<center> <h1> Contact me </h1> </center>
+<img id="profpic" src="Images/xxxxx.png">
+<center>
+<div id="contact">
+<form onsubmit="return false;" id="ContactInfo">
+    <label for="fname">First Name</label> <br>
+    <input type="text" id="Fname" name="firstname" maxlength="24" required="required" placeholder="Your name"> <br>
+
+    <label for="lname">Last Name</label> <br>
+    <input type="text" id="Lname" name="lastname" maxlength="24" required="required" placeholder="Your last name"> <br>
+
+    <label for="gender">Gender</label> <br>
+    <select id="Gender" name="gender">
+      <option value="male">male</option>
+      <option value="female">female</option>
+    </select> <br>
+
+    <label for="age">Age</label> <br>
+    <input type="number" id="Age" name="Age" min="18" max="99" placeholder="older than 18" required="required"><br>
+
+    <label for="email">Email</label> <br>
+    <input type="email" id="Email" name="Email" placeholder="Email" required="required" size="50"><br>
+
+    <label for="website">Website</label> <br>
+    <input type="url" id="Website" name="Website" placeholder="Website addres" required="required" size="50"><br>
+
+    <label for="comment">Comment</label> <br>
+    <textarea id="Comment" name="comment" style="width:400px; height: 200px;" placeholder="Comment" required="required"></textarea> <br>
+
+    <input type="reset" value="Reset"> <br>
+    <input class="submit" onclick="GetInfo()" type="submit" value="Send" />
+</form>
+</div>
+</center>
+
+<center> <p> Your submited contact info: </p>
+<p id="coninf1"> </p>
+<p id="coninf2"> </p>
+<p id="coninf3"> </p>
+<p id="coninf4"> </p>
+<p id="coninf5"> </p>
+<p id="coninf6"> </p>
+<p id="coninf7"> </p> </center>
+
+</body>
+</html>
