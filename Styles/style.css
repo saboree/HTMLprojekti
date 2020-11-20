@@ -174,3 +174,8 @@ width: 100%
   transition: all 0.2s ease 0s;
   margin-top: 5px;
 }
+
+.footer {
+  background: #A2CAD7;
+  height: 200px;
+}
