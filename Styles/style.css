@@ -1,9 +1,13 @@
 /* Basic body text style and font, also no overflow horizontal */
+* {
+  box-sizing: border-box;
+}
 body {
-  overflow-x: hidden;
-  margin-left: 0px;
-  background-color: rgb(0, 9, 19);
-  color: #efeff1;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  font-family: verdana;
   line-height: 1.5;
   font-size: 18px;
   font-weight: 500;
@@ -14,8 +18,42 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #772ce8;
+  color: #A2CAD7;
 }
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../Images/horses.jpg");
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+}
+
+.image-box_overlay h1 {
+  text-align: center;
+  justify-content: center;
+}
+
+.image-box_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.logo img{
+  height: 320px;
+  width: auto;
+  opacity: 0.6;
+}
+
 /* Webpage navigation bar */
 #Navigation {
   width: 100%;
@@ -31,6 +69,7 @@ a:hover {
   border-style: solid;
   word-spacing: 10px;
   font-weight: 800;
+  z-index: 2;
 }
 /* Basic layout for every pages if no changes needed */
 #Layout {
