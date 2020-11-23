@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cdeb432-11fc-41c2-b8bd-9594b45f3e20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/About.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/style.css" afterDir="false" />
     </list>
@@ -51,6 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605910524107</updated>
       <workItem from="1605910525302" duration="311000" />
+      <workItem from="1605910901216" duration="39000" />
+      <workItem from="1606125779502" duration="2330000" />
     </task>
     <servers />
   </component>
@@ -67,11 +70,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="159" key="Vcs.Push.Dialog.v2" timestamp="1605910584952">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1605910584952" />
+    <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606125783148">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.829@0.23.1440.829" timestamp="1606125783148" />
+    <state x="770" y="176" width="670" height="676" key="search.everywhere.popup" timestamp="1606125941528">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="770" y="176" width="670" height="676" key="search.everywhere.popup/0.23.1440.829@0.23.1440.829" timestamp="1606125941528" />
   </component>
 </project>
