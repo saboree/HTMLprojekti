@@ -10,7 +10,7 @@ body {
   margin: 0;
   color: #111211;
   background: #efeff1;
-  font-family: verdana;
+  font-family: Verdana;
   line-height: 1.5;
   font-size: 16px;
   font-weight: 500;
@@ -25,6 +25,8 @@ body {
   align-items: center;
   text-align:center;
 }
+
+/* Header */
 
 /* Webpage navigation bar */
 #Navigation {
@@ -82,68 +84,36 @@ li a:hover {
   opacity: 0.6;
 }
 
-/* Basic layout for every pages if no changes needed */
-#Layout {
-  font-family: Arial;
-  font-size: 18px;
-  margin: 50px 0px 0px 0px;
-  transition: all 0.4s ease 0s;
+/* Section about Talli */
+.grid-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-#Layout p{
-  margin-top: -10px;
+
+/* Section Miksi me */
+.choice {
+  background-image: url("../Images/horses.jpg");
+  background-size: cover;
+  position: relative;
 }
-#profpic {
-  border-radius:50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -20px;
-  width: 340px;
+
+.choice .titleh3 {
+  color: white;
 }
-/* 2nd "layout" for about page that i can click to */
-#scrollinto {
-  margin: 80px 0px 0px 0px;
+
+/* Section Hinnasto */
+.grid-prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-#arrow {
-  padding-left: 10px;
-  margin-bottom: -120px;
-  width: 60px;
-  height: auto;
+
+.card-bg {
+  background-color: #E8FFFF;
 }
-/* Button design on about me webpage */
-#LeagueOfLegends {
-  margin-top: 130px;
-  width:300px;
-  height: 300px;
-  background: url("../Images/boop.png") no-repeat;
-}
-/* Hover animation */
-#LeagueOfLegends:hover {
-  margin-top: 130px;
-  width:300px;
-  height: 300px;
-  background: url("../Images/kisse.png") no-repeat;
-}
-/* Divider if you want to little line to brake the section */
-#divider {
-margin-top: 90px;
-margin-bottom: 100px;
-border: 1px solid #111211;
-width: 100%
-}
-#marginbot {
-  margin: 70px 0px 70px 0px;
-}
+
 /* Contact page CSS, needed to do copypaste my old style so many times for different form thingies */
 #contact {
-  font-size: 18px;
-  width: 100%;
-  color: white;
-  padding: 15px;
-  display:flex;
-  justify-content: center;
-  text-align: left;
-  font-weight: 800;
+
 }
 #contact input {
   width: 400px;
@@ -187,6 +157,6 @@ width: 100%
 }
 
 .footer {
-  background: #A2CAD7;
+  background: #E6E6E6;
   height: 200px;
 }
