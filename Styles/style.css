@@ -26,6 +26,14 @@ body {
   text-align:center;
 }
 
+section {
+  padding-top: 10px;
+}
+
+.title3 {
+  font-size: 25px;
+}
+
 /* Header */
 
 /* Webpage navigation bar */
@@ -84,10 +92,24 @@ li a:hover {
   opacity: 0.6;
 }
 
+hr {
+  border: none;
+  background-color: white;
+  width: 20%;
+  color: white;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
 /* Section about Talli */
 .grid-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+video {
+  width: 580px;
+  height: 370px;
 }
 
 /* Section Miksi me */
@@ -97,7 +119,7 @@ li a:hover {
   position: relative;
 }
 
-.choice .titleh3 {
+.choice .title3 {
   color: white;
 }
 
@@ -107,8 +129,18 @@ li a:hover {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-item-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
 .card-bg {
   background-color: #E8FFFF;
+  height: 200px;
+  width: 60%;
+  border-radius: 20px 0 20px 0;
 }
 
 /* Contact page CSS, needed to do copypaste my old style so many times for different form thingies */
