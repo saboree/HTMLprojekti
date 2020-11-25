@@ -119,7 +119,23 @@ video {
   position: relative;
 }
 
+.grid-choice {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .choice .title3 {
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.thumb img {
+  width: 26%;
+  height: 26%;
+}
+
+.grid-item-choice p {
   color: white;
 }
 
@@ -191,4 +207,9 @@ video {
 .footer {
   background: #E6E6E6;
   height: 200px;
+}
+
+.s-media-icons li img {
+  width: 50px;
+  height: 50px;
 }
