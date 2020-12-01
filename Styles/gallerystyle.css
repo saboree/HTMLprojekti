@@ -145,3 +145,19 @@ figcaption {
     -webkit-background-size: contain;
     background-size: contain;
 }
+body {
+    background-color: #EEFFDB;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    text-align:center;
+    font-family: Verdana;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 500;
+}
+
