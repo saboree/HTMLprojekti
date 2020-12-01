@@ -163,48 +163,24 @@ video {
 
 /* Contact page CSS, needed to do copypaste my old style so many times for different form thingies */
 #contact {
+  background: white;
+}
+
+.grid-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#contact input {
 
 }
-#contact input {
-  width: 400px;
-  font-size: 18px;
-  color: #fff !important;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #1B0F3E;
-  padding: 20px;
-  border-radius: 50px;
-  display: inline-block;
-  border: none;
-  transition: all 0.4s ease 0s;
-  margin-top: 5px;
-}
 #contact textarea {
-  font-size: 18px;
-  color: #fff !important;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #1B0F3E;
-  padding: 20px;
-  border-radius: 50px;
-  display: inline-block;
-  border: none;
-  transition: all 0.2s ease 0s;
-  margin-top: 5px;
+
 }
 #contact select {
-  font-size: 18px;
-  color: #fff !important;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #1B0F3E;
-  padding: 20px;
-  border-radius: 50px;
-  display: inline-block;
-  border: none;
-  transition: all 0.2s ease 0s;
-  margin-top: 5px;
+
 }
+
 
 .footer {
   background: #E6E6E6;

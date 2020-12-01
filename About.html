@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
   <head>
  <meta charset="utf-8">
 <base href="About.html">
@@ -9,8 +9,9 @@
     <meta name="author" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Linking Javascript and CSS -->
-    <script src="JS/script.js" type="text/javascript"></script>
     <link href="Styles/style.css" type="text/css" rel="stylesheet"/>
+    <script src="JS/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="#" type="#" />
 	<title>Ratsastuskoulu Etusivu</title>
 </head>
@@ -87,7 +88,7 @@
             <div class="grid-choice">
                 <div class="grid-item-choice">
                     <div class="thumb">
-                        <img src="Images/icons/Hhead.png" alt="icon">
+                        <img src="Images/icons/Gallop.png" alt="icon">
                     </div>
                         <p class="grid-title">Räätälöidyt tunnit</p>
                 </div>
@@ -105,7 +106,7 @@
                 </div>
                 <div class="grid-item-choice">
                     <div class="thumb">
-                        <img src="Images/icons/HorseI.png" alt="icon">
+                        <img src="Images/icons/HorseRider.png" alt="icon">
                     </div>
                     <p class="grid-title">Ihana tunnelma</p>
                 </div>
@@ -143,15 +144,36 @@
     <section id="contact">
         <div class="wrapper">
             <h3 class="title3"> — Yhteystiedot — </h3>
+            <div class="grid-contact">
+                <div class="grid-item-contact">
+                    <p>Voit ottaa rohkeasti yhteyttä suoraan sähköpostiimme <br>
+                        kaikissa talliin tai ratsastustoimintaa liittyvissä kysymyksissä: <a href="mailto:lottamu@metropolia.fi">
+                            ratsastustalli@hirnahdus.fi</a></p>
+                    <br>
+                    Meidät löydät täältä:
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1969.9934004747267!2d24.69133261611629!3d60.41230208205079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468de4b900f561a1%3A0xc895bce56e3f91e3!2sSuonrannantie%2086%2C%2001860%20Nurmij%C3%A4rvi!5e0!3m2!1sen!2sfi!4v1606811086640!5m2!1sen!2sfi" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </p>
+                </div>
+                <div class="grid-item-contact">
+                    <form class="form">
+                        <div class="form-input">
+                            <span><i class="fa fa-user"></i></span>
+                            <input type="text" placeholder="Nimi">
+                        </div>
+                        <div class="form-input">
+                            <span><i class="fa fa-envelope"></i></span>
+                            <input type="text" placeholder="email">
+                        </div>
+                        <div class="form-input">
+                            <span><i class="fa fa-comment"></i></span>
+                            <textarea id="subject" name="subject" placeholder="Viesti"></textarea>
+                        </div>
+                        <input type="submit" value="Lähetä">
+                    </form>
+                </div>
 
-	     <p>Voit ottaa rohkeasti yhteyttä suoraan sähköpostiimme <br>
-                kaikissa talliin tai ratsastustoimintaa liittyvissä kysymyksissä: <a href="mailto:lottamu@metropolia.fi">
-                    ratsastustalli@hirnahdus.fi</a></p>
-                <br>
-                Meidät löydät täältä:
-                <br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1969.9934004747267!2d24.69133261611629!3d60.41230208205079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468de4b900f561a1%3A0xc895bce56e3f91e3!2sSuonrannantie%2086%2C%2001860%20Nurmij%C3%A4rvi!5e0!3m2!1sen!2sfi!4v1606811086640!5m2!1sen!2sfi" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </p>
+            </div>
 
 	    </div>
     </section>
@@ -160,8 +182,6 @@
        <div class="wrapper">
            <div class="s-media">
 <br>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                <a href="#" class="fa fa-facebook"></a>
                <a href="#" class="fa fa-instagram"></a>
                <a href="#" class="fa fa-youtube"></a>
