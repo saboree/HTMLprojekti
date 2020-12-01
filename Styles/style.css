@@ -34,8 +34,6 @@ section {
   font-size: 25px;
 }
 
-/* Header */
-
 /* Webpage navigation bar */
 #Navigation {
   display: flex;
@@ -256,3 +254,102 @@ video {
   text-align: center;
 }
 
+/* ~ Kuvagalleria CSS ~ */
+.kg {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    text-align:center;
+    font-family: Verdana;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 500;
+    background: #efeff1;
+}
+.hevonen1{
+  width: 100%;
+  height: 850px;
+  overflow: hidden;
+  pointer-events: none;
+}
+.heppa1 {
+  width: 100%;
+}
+.galleriateksti1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.kgkuvat {
+  margin: 1vw;
+}
+
+#kgul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vmin;
+  list-style-type: none;
+}
+
+#kgli {
+  height: 40vh;
+  flex-grow: 1;
+  margin: 2vmin;
+}
+
+#kgkuva {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 1vmin;
+}
+#kgli:last-child {
+  flex-grow: 10;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  #kgli {
+    height: 30vh;
+  }
+}
+
+@media (max-height: 480px) {
+  #kgli {
+    height: 80vh;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  #kgul {
+    flex-direction: row;
+  }
+
+  #kgli {
+    height: auto;
+    width: 100%;
+  }
+
+  #kgkuva {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+/* ~ Kuvagalleria CSS loppuu ~ */
+
+/* ~ Media query skaalausta ~ */
+@media (max-aspect-ratio: 1/1) and (max-width: 700px) {
+  li a {
+    font-size: 12px;
+  }
+}
+@media (max-aspect-ratio: 1/1) and (max-width: 500px) {
+  li a {
+    font-size: 8px;
+  }
+}
