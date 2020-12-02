@@ -149,8 +149,11 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+  font-size: 18px;
+}
+
+.price {
+  font-weight: 600;
 }
 
 .card-bg {
@@ -158,7 +161,8 @@ video {
   height: 130px;
   width: 60%;
   border-radius: 40px 0 40px 0;
-
+  box-shadow: 0 0 10px rgba(0,0,0,.15);
+  margin-bottom: 14%;
 }
 
 /* Contact page CSS, needed to do copypaste my old style so many times for different form thingies */
@@ -166,56 +170,139 @@ video {
   background: white;
 }
 
+.grid-item-contact {
+  margin: 20px 15px;
+}
+
 .grid-contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-#contact input {
-
-}
-#contact textarea {
-
-}
-#contact select {
-
+.form {
+  padding: 20px 0;
+  background-color: #efeff1;
+  height: auto;
+  width: 400px;
+  text-align: center;
 }
 
+.form .btn-sub {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid #1D1F20;;
+  color: #1D1F20;;
+  transition: .4s;
+}
 
+.form-input .btn-sub:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0,0,0,0);
+  transition: .4s;
+}
+
+.form .btn-sub:hover:after {
+  border-color: #1D1F20;;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+
+.form-input {
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 15px auto 0 auto;
+}
+
+.form-input input, textarea {
+  width: 70%;
+  font-family: Verdana;
+}
+
+.form-input input {
+  flex: .7;
+}
+
+.form-input i {
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -60%);
+  padding-right: 15px;
+}
+
+/* Section Footer */
 .footer {
   background: #E6E6E6;
   height: 200px;
 }
 
-.s-media-icons li img {
-  width: 50px;
-  height: 50px;
-}
 /*social media */
-.fa {
-   padding: 20px;
-   font-size: 30px;
-   width: 50px;
-   text-align: center;
-   text-decoration: none;
-   margin: 5px 2px;
+.s-media {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.s-media a{
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #1D1F20;
+  padding: 7px 5px 7px 5px;
+  margin-right: 5px;
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  border-radius: 50%;
  }
 
-.fa:hover {
-  opacity: 0.7;
-}
-
 .fa-facebook {
+  color: #1D1F20;
+  padding: 0 15px;
+}
+.fa-facebook:hover {
   background: #3B5998;
   color: white;
+  border: 2px solid white;
 }
+
 .fa-instagram {
-  background: #125688;
-  color: white;
+  color: #1D1F20;
 }
+
+.fa-instagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: white;
+  border: 2px solid white;
+}
+
 .fa-youtube {
+  color: #1D1F20;
+}
+
+.fa-youtube:hover {
   background: #bb0000;
   color: white;
+  border: 2px solid white;
 }
 /*tekijät*/
 .tekja {
