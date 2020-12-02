@@ -122,11 +122,14 @@ video {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.choice .wrapper {
+  position: relative;
+  z-index: 2;
+}
+
 .choice .title3 {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  font-weight: 800;
-  font-size: 20px;
 }
 
 .thumb img {
@@ -171,19 +174,23 @@ video {
   background: white;
 }
 
-.grid-item-contact {
-  margin: 20px 15px;
-}
-
 .grid-contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-item-contact {
+  margin: 10px 10px 25px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .form {
   background-color: #efeff1;
+  min-height: 450px;
   height: auto;
-  width: 100%;
+  width: 86%;
   text-align: center;
   padding: 22px 20px 10px 20px;
 }
