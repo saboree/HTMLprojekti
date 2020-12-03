@@ -2,34 +2,95 @@
 <html lang="fi">
   <head>
     <meta charset="utf-8">
-    <script src="JS/script.js" type="text/javascript"></script>
     <link href="Styles/style.css" type="text/css" rel="stylesheet"/>
-	<title>Ajanvaraus</title>
-</head>
-   <body>
+    <link href="Styles/calendar.css" type="text/css" rel="stylesheet"/>
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<header>
-  <!-- Navigation links -->
-  <div class="wrapper">
-    <nav>
-      <ul id="Navigation">
-        <li><a href="About.html">Etusivu</a></li>
-        <li><a href="Gallery.html">Kuvagalleria</a></li>
-        <li><a href="Ajanvaraus.html">Ajanvaraus</a></li>
-        <li><a href="#contact">Yhteystiedot</a></li>
-	      <li><a href="Tekijat.html">Tekijät</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <title>Ajanvaraus</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation links -->
+      <div class="wrapper">
+        <nav>
+          <ul id="Navigation">
+            <li><a href="About.html">Etusivu</a></li>
+            <li><a href="Gallery.html">Kuvagalleria</a></li>
+            <li><a href="Ajanvaraus.html">Ajanvaraus</a></li>
+            <li><a href="Tekijat.html">Tiimi</a></li>
+            <li><a href="#contact">Yhteystiedot</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <!-- Basic layout -->
 
-<!-- Basic layout -->
-<article style="text-align: center;">
-  <h2>Ajanvaraus kalenterin kehitys on käynnissä...</h2>
-</article>
-
-<footer class="footer"></footer>
-</div>
-</body>
+    <article class="container">
+      <div class="info">
+        <i class="fas fa-horse-head"></i>
+        <h3 style="width:100%;">Olemme avoinna ma - pe klo 9:00 - 20:00</h3>
+        <h1 style="width: 100%;"></h1>
+        <i id="second" class="fas fa-horse-head"></i>
+      </div>
+      <figure class="field">
+        <div class="time">
+          <h3></h3>
+          <select id="kello" name="kello">
+          </select>
+          <select id="kesto" name="kesto">
+          </select>
+        </div>
+        <form>
+          <label for="etunimi">Etunimi</label><span> *</span><input type="text" id="etunimi" />
+          <label for="sukunimi">Sukunimi</label><span> *</span><input type="text" id="sukunimi"/>
+          <label for="puhnro">Puhnro:</label><input type="text" id="puhnro"/>
+          <label for="email">Email:</label><input type="email" id="email"/>
+          <button class="poistu" type="submit" id="poistu" >Poistu</button>
+          <button class="tilaa" type="button" id="tilaa">Tilaa</button>
+        </form>
+      </figure>
+      <figure class="final">
+      </figure>
+      <figure class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Su</div>
+          <div>Ma</div>
+          <div>Ti</div>
+          <div>Ke</div>
+          <div>To</div>
+          <div>Pe</div>
+          <div>La</div>
+        </div>
+        <div class="days">
+        </div>
+      </figure>
+      <script src="JS/calendar.js"></script>
+    </article>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="s-media">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="JS/calendar.js"></script>
+    <script src="JS/script.js" type="text/javascript"></script>
+  </body>
 </html>
+
