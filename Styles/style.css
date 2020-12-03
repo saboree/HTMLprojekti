@@ -41,6 +41,7 @@ section {
   list-style: none;
   padding-left: 0;
 }
+
 li a {
   margin-left: 10px;
   margin-right: 10px;
@@ -88,6 +89,7 @@ li a:hover {
   height: 260px;
   width: auto;
   opacity: 0.6;
+  margin-bottom: 1.4em;
 }
 
 hr {
@@ -137,6 +139,11 @@ video {
   height: 26%;
 }
 
+.grid-item-choice {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .grid-item-choice p {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -166,7 +173,7 @@ video {
   border-radius: 40px 0 40px 0;
   box-shadow: 0 0 10px rgba(0,0,0,.15);
   margin-top: 4%;
-  margin-bottom: 10%;
+  margin-bottom: 20px;
 }
 
 /* Contact page CSS, needed to do copypaste my old style so many times for different form thingies */
@@ -186,8 +193,37 @@ video {
   justify-content: center;
 }
 
+.grid-item-contact01 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item-contacts-list i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.grid-item-contacts-list .fa-mobile {
+  font-size: 2.38em;
+}
+
+.grid-item-contacts-list p a{
+  text-decoration: none;
+  color: black;
+}
+
+.grid-item-contacts-list p {
+  font-size: 14px;
+}
+
 .form {
   background-color: #efeff1;
+  //background-color: #E2F2CE;
   min-height: 450px;
   height: auto;
   width: 86%;
@@ -328,18 +364,6 @@ video {
   color: white;
   border: 2px solid white;
 }
-/*tekijät*/
-.tekja {
-  background-image: url("../Images/starrynight.jpg");
-  background-size: cover;
-  position: relative;
-}
-/*tekijädiv*/
-.myDiv {
-  border: 5px outset black;
-  background-color: white;
-  text-align: center;
-}
 
 /* ~ Kuvagalleria CSS ~ */
 .kg {
@@ -439,4 +463,26 @@ video {
   li a {
     font-size: 8px;
   }
+}
+
+
+/* Section Tiimi */
+
+/*______________________*/
+/*tekijät*/
+.tekja {
+  background-image: url("../Images/starrynight.jpg");
+  background-size: cover;
+  position: relative;
+}
+/*tekijädiv*/
+.myDiv {
+  border: 5px outset black;
+  background-color: white;
+  text-align: center;
+}
+/*______________________*/
+
+.our-team {
+  background-color: white;
 }
