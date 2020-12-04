@@ -196,6 +196,7 @@ video {
 .grid-item-contact01 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-top: 16px;
 }
 
 .grid-item-contacts-list i {
@@ -209,7 +210,8 @@ video {
 }
 
 .grid-item-contacts-list .fa-mobile {
-  font-size: 2.38em;
+  font-size: 2.2em;
+  height: 26px;
 }
 
 .grid-item-contacts-list p a{
@@ -219,6 +221,11 @@ video {
 
 .grid-item-contacts-list p {
   font-size: 14px;
+}
+
+.grid-item-contact02 {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .form {
@@ -310,7 +317,7 @@ video {
   height: 200px;
 }
 
-/*social media */
+/* Social media */
 .s-media {
   display: flex;
   position: relative;
@@ -423,6 +430,29 @@ video {
   flex-grow: 10;
 }
 
+
+/* Section Tiimi */
+
+.our-team {
+  background-color: white;
+}
+
+.our-tem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item-team {
+  display: flex;
+}
+
+/*.grid-item-team {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  flex-basis: 100%;*/
+/*  max-width: 100%;*/
+/*}*/
+
 @media (max-aspect-ratio: 1/1) {
   #kgli {
     height: 30vh;
@@ -463,26 +493,4 @@ video {
   li a {
     font-size: 8px;
   }
-}
-
-
-/* Section Tiimi */
-
-/*______________________*/
-/*tekijät*/
-.tekja {
-  background-image: url("../Images/starrynight.jpg");
-  background-size: cover;
-  position: relative;
-}
-/*tekijädiv*/
-.myDiv {
-  border: 5px outset black;
-  background-color: white;
-  text-align: center;
-}
-/*______________________*/
-
-.our-team {
-  background-color: white;
 }
