@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html {
+    font-size: 66.5%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #efeff1;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.info {
+    width: 100%;
+    border: 1px solid #167e56;
+    background-color: #5e805e;
+    color: #fff;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.info i {
+    font-size: 2.5rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+
+.info #second {
+    margin-left: 98%;
+}
+
+.info h1 {
+    width: 100%;
+}
+
+.info h2 {
+    padding: 10px;
+    margin: 10px 50px;
+    background-color: #ec4b4b;
+    font-size: 90%;
+    border: 1px solid red;
+}
+
+.info h3 {
+    width:100%;
+
+}
+
+
+
+/* Lomake */
+
+.field {
+    display: none;
+    width: 45rem;
+    height: 52rem;
+    padding: 20px 20px 0 20px;
+    background-color: #5e805e;
+    margin-right: 100px;
+    box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.4);
+}
+
+.formContainer {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    font-size: 18px;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.poistu {
+    width: 49%;
+    background-color: #a7b5a7;
+    font-size: 20px;
+    color: #192913;
+    padding: 14px 20px;
+    margin: 30px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tilaa {
+    width: 49%;
+    background-color: #7fd284;
+    font-size: 20px;
+    color: #192913;
+    padding: 14px 20px;
+    margin: 30px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.poistu:hover {
+    background-color: #576557;
+    border: 1px solid black;
+    color: #fff;
+}
+
+.tilaa:hover {
+    background-color: #49694b;
+    border: 1px solid #192d1e;
+    color: #fff;
+}
+
+/* Hevosen kuvat */
+span {
+    color: #ee1111;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Lomaken kentta */
+.field h3 {
+    text-align: center;
+    color: lightyellow;
+    font-weight: 300;
+}
+
+/* Lopullinen data sivu */
+
+.final {
+    display: none;
+    width: 45rem;
+    height: 52rem;
+    margin-right: 100px;
+    padding: 20px;
+    background-color: #a2a194;
+    border: 2px double #5e805e;
+    box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.4);
+}
+
+.final h1 {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+    color: #efef93;
+    margin-bottom: 50px;
+}
+
+.final h2 {
+    margin-top: 50px;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+
+.final .uusiVaraus {
+    width: 100%;
+    background-color: #86856b;
+    font-size: 20px;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 50px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.final .uusiVaraus:hover {
+    background-color: #6f6e5b;
+}
+
+
+/* Kalenteri */
+
+.calendar {
+    width: 45rem;
+    height: 52rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.4);
+}
+
+.month {
+    width: 100%;
+    height: 12rem;
+    background-color: #5e805e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+
+.month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+
+.month h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.month p {
+    font-size: 1.6rem;
+}
+
+.weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+
+.days {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.days div {
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40.2rem/7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+    transition: background-color 0.2s;
+}
+
+
+.days .activeDay:hover {
+    background-color: #262626;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+}
+
+.days .day {
+    background-color: #262626;
+    opacity: 0.5;
+}
+
+.days .dayoff {
+    opacity: 0.5;
+}
+
+.days .varaus {
+    background-color: #a2a194;
+    color: #fff;
+}
+
+.days .today:hover {
+    background-color: #262626;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+
+.today {
+    background-color: #5e805e;
+}
+
+/* Sivun responsiivisus */
+
+@media only screen and (max-width: 1075px) {
+    .field, .final {
+        margin-right: 5px;
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .field, .final {
+        margin-right: 5px;
+
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .field, .final {
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .calendar {
+        width: 35rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .weekdays div {
+        width: calc(34.2rem/7);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .days div {
+        width: calc(30.2rem/7);
+    }
+}
