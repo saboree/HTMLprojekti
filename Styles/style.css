@@ -444,14 +444,30 @@ video {
 
 .grid-item-team {
   display: flex;
+  flex-wrap: wrap;
 }
 
-/*.grid-item-team {*/
-/*  display: flex;*/
-/*  flex-wrap: wrap;*/
-/*  flex-basis: 100%;*/
-/*  max-width: 100%;*/
-/*}*/
+.grid-item-team .grid-card-team {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 15px;
+}
+
+.grid-item-team .grid-card-team .inner {
+  position: absolute;
+  z-index: 1;
+}
+
+.grid-item-team .grid-card-team .inner .info {
+  background-color: red;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-item-team .grid-card-team img {
+  width: 100%;
+  border-radius: 8px;
+}
 
 @media (max-aspect-ratio: 1/1) {
   #kgli {
