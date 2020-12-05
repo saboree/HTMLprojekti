@@ -35,11 +35,54 @@ section {
 }
 
 /* Webpage navigation bar */
+/* Mobail menu */
+.menu-btn {
+  display:none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 12px 12px 12px 12px;
+  overflow: hidden;
+}
+
+.menu-btn span {
+  width: 30px;
+  height: 2.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #192d1e;
+  transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2){
+  top: calc(50% - 7px);
+}
+.menu-btn span:nth-of-type(3){
+  top: calc(50% + 7px);
+}
+
+/* onClick menuBtn */
+.menu-btn.active span:first-of-type {
+  transform: translateX(100%);
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+  /* Full screen menu */
 #Navigation {
   display: flex;
   justify-content: center;
   list-style: none;
   padding-left: 0;
+  z-index: 2;
 }
 
 li a {
@@ -107,6 +150,11 @@ hr {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-about .grid-item {
+  text-align: center;
+  margin: 10px 20px 20px 20px;
+}
+
 video {
   width: 580px;
   height: 370px;
@@ -168,7 +216,7 @@ video {
 
 .card-bg {
   background-color: #E2F2CE;
-  height: 130px;
+  height: 150px;
   width: 60%;
   border-radius: 40px 0 40px 0;
   box-shadow: 0 0 10px rgba(0,0,0,.15);
@@ -226,6 +274,11 @@ video {
 .grid-item-contact02 {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.grid-item-contact iframe {
+  width: 520px;
+  height: 450px;
 }
 
 .form {
@@ -431,8 +484,7 @@ video {
 }
 
 
-/* Section Tiimi */
-
+/* Sivu Tiimi */
 .our-team {
   background-color: white;
 }
@@ -455,7 +507,7 @@ video {
 .grid-item-team .grid-card-team .inner {
   position: relative;
   z-index: 1;
-  top: -15%;
+  top: -10%;
 }
 
 .grid-item-team .grid-card-team .inner .info {
@@ -513,12 +565,76 @@ video {
 /* ~ Kuvagalleria CSS loppuu ~ */
 
 /* ~ Media query skaalausta ~ */
+@media all and (max-width: 820px) {
+  #Navigation {
+    position: fixed;
+    display: block;
+    padding-top: 20px;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a7b5a7;
+    transform: translateX(-100%);
+    z-index: 2;
+  }
+  #Navigation.active {
+    transform: translateX(0);
+  }
+  #Navigation li a {
+    font-size: 22px;
+    margin-top: 35px;
+    padding-top: 20px;
+  }
+  #Navigation li a:hover{
+    color: white;
+  }
+  .head {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu-btn {
+    display: revert;
+  }
+  .card-bg .grid-title {
+    font-size: 16px;
+    padding: 8px 5px 0 5px;
+  }
+  .card-bg {
+    width: 100%;
+    height: 100%;
+    margin: 0 5px 0 5px;
+  }
+  .grid-about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  video {
+    width: 480px;
+    height: 270px;
+  }
+  .grid-item-contact02 {
+    order: 1;
+  }
+  .grid-contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-aspect-ratio: 1/1) and (max-width: 700px) {
   li a {
     font-size: 12px;
   }
 }
+
 @media (max-aspect-ratio: 1/1) and (max-width: 500px) {
+  video {
+    width: 420px;
+    height: 210px;
+  }
+  .grid-item-contact iframe {
+    width: 420px;
+    height: 350px;
+  }
   li a {
     font-size: 8px;
   }
