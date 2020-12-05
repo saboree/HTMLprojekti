@@ -284,7 +284,7 @@ span {
     opacity: 0.5;
 }
 
-.days .todayOff {
+.days.todayOff {
     background-color: #5e805e;
     opacity: 0.5;
 }
