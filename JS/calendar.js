@@ -293,7 +293,7 @@ const makeReservation = () => {
     }
 }
 
-// kalenterin funktio
+// kalenterin funktio joka luo kalenterin näytölle
 const renderCalender = () => {
     date.setDate(1);
     // tarkistetaan, onko varaus tehty ja data laattiko auki
@@ -361,7 +361,12 @@ const renderCalender = () => {
     // käydään läpi kuukauden kaikki päivät
     for (let i = 1; i <= lastDay; i++) {
         if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
-            days += `<div class="today" id=${i}>${i}</div>`;    // jos valittiin nykyinen päivä, annettaan div:ile luokka
+            if (dayOff(i)) {
+                days += `<div class="todayOff" id=${i}>${i}</div>`; // jos nykyinen päivä viikonlopulla, ei valittava
+            } else {
+                days += `<div class="today" id=${i}>${i}</div>`;    // jos valittiin nykyinen päivä, annettaan div:ile luokka
+            }
+
         } else {
             // tarkistetaan, ettö valittaan vain päivät jotka ovat nykyisestä päivästä eteenpäin
             if ((i >= new Date().getDate() && date.getFullYear() === new Date().getFullYear() &&

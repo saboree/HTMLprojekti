@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8cdeb432-11fc-41c2-b8bd-9594b45f3e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tekijat.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tekijat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/calendar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +93,8 @@
       <workItem from="1607078183016" duration="440000" />
       <workItem from="1607078704295" duration="21000" />
       <workItem from="1607104432435" duration="4617000" />
+      <workItem from="1607183010965" duration="39000" />
+      <workItem from="1607183051726" duration="2069000" />
     </task>
     <servers />
   </component>
@@ -121,6 +123,10 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="506" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834" timestamp="1606214742772" />
+    <state x="665" y="349" key="FileChooserDialogImpl" timestamp="1607183048456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="665" y="349" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607183048456" />
     <state x="127" y="57" key="MergeDialog" timestamp="1607078580638">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
