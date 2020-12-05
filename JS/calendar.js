@@ -293,7 +293,7 @@ const makeReservation = () => {
     }
 }
 
-// kalenterin funktio joka luo kalenterin näytölle
+// kalenterin funktio
 const renderCalender = () => {
     date.setDate(1);
     // tarkistetaan, onko varaus tehty ja data laattiko auki
@@ -361,7 +361,7 @@ const renderCalender = () => {
     // käydään läpi kuukauden kaikki päivät
     for (let i = 1; i <= lastDay; i++) {
         if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
-            days += `<div class="today" id=${i}>${i}</div>`; // jos nykyinen päivä viikonlopulla, ei valittava
+            days += `<div class="today" id=${i}>${i}</div>`;    // jos valittiin nykyinen päivä, annettaan div:ile luokka
         } else {
             // tarkistetaan, ettö valittaan vain päivät jotka ovat nykyisestä päivästä eteenpäin
             if ((i >= new Date().getDate() && date.getFullYear() === new Date().getFullYear() &&
@@ -396,9 +396,8 @@ const renderCalender = () => {
         document.querySelector('.today')
             .addEventListener('click', (e) => {
                 // kutsutaan funktio, joka mahdollistaa tehdä varaus sopivalle päivälle
-                if (!dayOff(i)) {
-                    getDay(months, e.target.id, date.getMonth());
-                }
+                getDay(months, e.target.id, date.getMonth());
+
             })
     }
 

@@ -284,18 +284,9 @@ span {
     opacity: 0.5;
 }
 
-.days.todayOff {
-    background-color: #5e805e;
-    opacity: 0.5;
-}
-
 .days .varaus {
     background-color: #a2a194;
     color: #fff;
-}
-
-.today {
-    background-color: #5e805e;
 }
 
 .days .today:hover {
@@ -309,7 +300,9 @@ span {
     opacity: 0.5;
 }
 
-
+.today {
+    background-color: #5e805e;
+}
 
 /* Sivun responsiivisus */
 
