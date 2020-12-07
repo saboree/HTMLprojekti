@@ -540,6 +540,35 @@ ul#kgul {
   background-color: white;
 }
 
+.bannerbg {
+  background-color: #5e805e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 235px;
+}
+
+.bannerbg .title3, .bannerbg p {
+  color: white;
+}
+
+.bannerbg p {
+  font-size: 1.17em;
+  font-weight: 600;
+}
+
+.bannerbg i {
+  font-size: 1.7rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+  color: white;
+}
+
+.bannerbg #horsicon {
+  margin-left: 93%;
+}
+
+
 .our-tem-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
