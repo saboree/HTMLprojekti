@@ -149,7 +149,6 @@ const dayOff = (id) => {
     s9 = s8 + 6;
     s10 = s9 + 1;
     s11 = s10 + 6;
-    console.log("Test == " + s3);
     // käydään iteroimalla läpi kaikki päivät kalenterissa ja löydetöön lauantait ja sunnuntait
     if (intId ===  s1 || intId === s2 || intId === s3 || intId === s4 || intId === s5 || intId === s6 || intId === s7 || intId === s8 ||
         intId === s9 || intId === s10) {
@@ -224,14 +223,13 @@ const getDay = (monthList, id, month) => {
     varausData = varaus;
     // tallennetaaan muuttujaan valittu kuukausi
     varausKuukausi = month;
-    console.log("Varatud kuu on: " + month);
     // tallennetaan muuttujaan valittu päivön numero
     valitsettuPvm = parseInt(id);
 }
 
 // funktio varattu ratsastusajan hinnan laskemiseksi
 const price = () => {
-    let tuntihinta = 30;
+    let tuntihinta = 40;
     let varattuAika = parseFloat(kestoInput.value);
 
     return tuntihinta * varattuAika;
@@ -396,8 +394,9 @@ const renderCalender = () => {
         document.querySelector('.today')
             .addEventListener('click', (e) => {
                 // kutsutaan funktio, joka mahdollistaa tehdä varaus sopivalle päivälle
-                getDay(months, e.target.id, date.getMonth());
-
+                if (!dayOff(e.target.id)) {
+                    getDay(months, e.target.id, date.getMonth());
+                }
             })
     }
 
