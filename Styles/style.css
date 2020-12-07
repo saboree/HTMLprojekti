@@ -84,16 +84,6 @@ section {
   padding-left: 0;
   z-index: 2;
 }
-/* Overwrite fix for navigation on "Ajanvaraus" page */
-#Navigation1 {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding-left: 0;
-  z-index: 2;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
 
 li a {
   margin-left: 10px;
