@@ -540,45 +540,44 @@ ul#kgul {
   background-color: white;
 }
 
-.banner {
+.container {
   width: 100%;
-  padding: 20px 30px;
-}
-
-.bannerbg {
-  background-color: #5e805e;
+  max-height: 235px;
+  background-color: #efeff1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 235px;
+  flex-wrap: wrap;
 }
 
-.bannerbg .title3, .bannerbg p {
-  color: white;
+.topban {
+  width: 100%;
+  background-color: #5e805e;
+  color: #fff;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  text-align: center;
 }
 
-.bannerbg p {
-  font-size: 1.17em;
-  font-weight: 600;
-}
-
-.bannerbg i {
-  display: flex;
-  position: relative;
+.topban i {
   font-size: 1.65rem;
-  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
-  color: white;
+  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+  color: #eee;
 }
 
-.bannerbg #horseicon {
-  left: 0;
-  margin-bottom: -6.5px;
+.topban #second {
+  margin-left: 98%;
 }
 
-.bannerbg #horsicon {
-  margin-top: -6.5px;
-  left: 96%;
+.topban h1 {
+  width: 100%;
+}
+
+.topban h3 {
+  width:100%;
 }
 
 .our-tem-grid {
