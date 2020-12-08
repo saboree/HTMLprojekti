@@ -76,7 +76,7 @@ section {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* Full screen menu */
+  /* Full screen menu */
 #Navigation {
   display: flex;
   justify-content: center;
@@ -425,7 +425,7 @@ video {
   border: 2px solid white;
 }
 
-/* ~ Section Gallery ~ */
+/* ~ Kuvagalleria CSS ~ */
 .kg {
     display: flex;
     min-height: 100vh;
@@ -524,8 +524,9 @@ ul#kgul {
     min-width: 0;
   }
 }
+/* ~ Kuvagalleria CSS loppuu ~ */
 
-/* Page Tiimi */
+/* Sivu Tiimi */
 .our-team {
   background-color: white;
 }
