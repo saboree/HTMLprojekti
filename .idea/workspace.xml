@@ -22,7 +22,6 @@
     <list default="true" id="8cdeb432-11fc-41c2-b8bd-9594b45f3e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajanvaraus.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajanvaraus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tekijat.html" beforeDir="false" afterPath="$PROJECT_DIR$/tekijat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,9 @@
       <workItem from="1607196392095" duration="93000" />
       <workItem from="1607333044307" duration="257000" />
       <workItem from="1607348254639" duration="5000" />
-      <workItem from="1607349080508" duration="9333000" />
+      <workItem from="1607349080508" duration="9410000" />
+      <workItem from="1607387269564" duration="2937000" />
+      <workItem from="1607390242065" duration="185000" />
     </task>
     <servers />
   </component>
@@ -140,10 +141,10 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="341" y="167" key="MultipleFileMergeDialog/0.23.1440.828@0.23.1440.828" timestamp="1607078580692" />
-    <state x="309" y="159" key="Vcs.Push.Dialog.v2" timestamp="1607366195067">
+    <state x="309" y="159" key="Vcs.Push.Dialog.v2" timestamp="1607376043857">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1607366195067" />
+    <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1607376043857" />
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1606857922483" />
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1607078586879" />
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1606128119975" />
@@ -159,9 +160,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="836" y="52" width="604" height="735" key="find.popup/0.23.1440.825@0.23.1440.825" timestamp="1607190403740" />
-    <state x="770" y="176" width="670" height="676" key="search.everywhere.popup" timestamp="1606219037333">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state x="770" y="175" width="670" height="672" key="search.everywhere.popup" timestamp="1607388256256">
+      <screen x="0" y="23" width="1440" height="824" />
     </state>
+    <state x="770" y="175" width="670" height="672" key="search.everywhere.popup/0.23.1440.824@0.23.1440.824" timestamp="1607388256256" />
     <state x="770" y="176" width="670" height="676" key="search.everywhere.popup/0.23.1440.829@0.23.1440.829" timestamp="1606219037333" />
   </component>
 </project>

@@ -540,6 +540,11 @@ ul#kgul {
   background-color: white;
 }
 
+.banner {
+  width: 100%;
+  padding: 20px 30px;
+}
+
 .bannerbg {
   background-color: #5e805e;
   display: flex;
@@ -559,15 +564,22 @@ ul#kgul {
 }
 
 .bannerbg i {
-  font-size: 1.7rem;
-  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+  display: flex;
+  position: relative;
+  font-size: 1.65rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
   color: white;
 }
 
-.bannerbg #horsicon {
-  margin-left: 93%;
+.bannerbg #horseicon {
+  left: 0;
+  margin-bottom: -6.5px;
 }
 
+.bannerbg #horsicon {
+  margin-top: -6.5px;
+  left: 96%;
+}
 
 .our-tem-grid {
   display: grid;
@@ -634,6 +646,7 @@ ul#kgul {
   #Navigation li a {
     font-size: 22px;
     margin-top: 35px;
+    line-height: 3.4em;
     padding-top: 20px;
   }
   #Navigation li a:hover{
@@ -663,29 +676,31 @@ ul#kgul {
     height: 270px;
   }
   .grid-item-contact02 {
-    order: 1;
+    order: 3;
   }
   .grid-contact {
     grid-template-columns: repeat(1, 1fr);
   }
-}
 
-@media (max-aspect-ratio: 1/1) and (max-width: 700px) {
-  li a {
-    font-size: 12px;
+  .our-tem-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-aspect-ratio: 1/1) and (max-width: 500px) {
+@media all and (max-width: 580px) {
   video {
     width: 420px;
     height: 210px;
+  }
+  .thumb img {
+    width: 40%;
+    height: 40%;
   }
   .grid-item-contact iframe {
     width: 420px;
     height: 350px;
   }
-  li a {
-    font-size: 8px;
+  .s-media {
+    margin-top: 30px;
   }
 }
