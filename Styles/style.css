@@ -145,6 +145,21 @@ hr {
 }
 
 /* Section about Talli */
+.weather {
+  display: block;
+  position: absolute;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid blue;
+  font-size: 10px;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+}
+.weather table {
+  width: 100%;
+}
+
 .grid-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
