@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cdeb432-11fc-41c2-b8bd-9594b45f3e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JS/gallery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/calendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajanvaraus.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajanvaraus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tekijat.html" beforeDir="false" afterPath="$PROJECT_DIR$/tekijat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,18 +148,18 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="341" y="167" key="MultipleFileMergeDialog/0.23.1440.828@0.23.1440.828" timestamp="1607078580692" />
-    <state x="309" y="159" key="Vcs.Push.Dialog.v2" timestamp="1607423339352">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state x="309" y="159" key="Vcs.Push.Dialog.v2" timestamp="1607435105022">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1607376043857" />
+    <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1607435105022" />
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1606857922483" />
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1607423339352" />
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1606128119975" />
     <state x="309" y="160" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1606214839663" />
-    <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607418046370">
+    <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607435037746">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1607418046370" />
+    <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1607435037746" />
     <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1607349084705" />
     <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.829@0.23.1440.829" timestamp="1606244774175" />
     <state x="635" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.831@0.23.1440.831" timestamp="1606906179807" />
