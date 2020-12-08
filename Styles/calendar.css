@@ -12,6 +12,7 @@ html {
 .container {
     width: 100%;
     min-height: 100vh;
+    /* height: 1000px; */
     background-color: #efeff1;
     color: #eee;
     display: flex;
@@ -99,7 +100,7 @@ select {
 }
 
 .poistu {
-    width: 49%;
+    width: 48%;
     background-color: #a7b5a7;
     font-size: 20px;
     color: #192913;
