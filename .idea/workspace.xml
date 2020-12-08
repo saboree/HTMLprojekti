@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cdeb432-11fc-41c2-b8bd-9594b45f3e20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2020__12_16__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2020__12_16__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +110,9 @@
       <workItem from="1607418038889" duration="5658000" />
       <workItem from="1607426241820" duration="1893000" />
       <workItem from="1607435730803" duration="658000" />
-      <workItem from="1607438052523" duration="6370000" />
+      <workItem from="1607438052523" duration="6752000" />
+      <workItem from="1607457070504" duration="3707000" />
+      <workItem from="1607461304975" duration="2780000" />
     </task>
     <servers />
   </component>
@@ -138,10 +142,10 @@
     </state>
     <state x="506" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.825@0.23.1440.825" timestamp="1607435749721" />
     <state x="506" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834" timestamp="1606214742772" />
-    <state x="640" y="284" key="FileChooserDialogImpl" timestamp="1607438049472">
+    <state x="640" y="284" key="FileChooserDialogImpl" timestamp="1607461302448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="284" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607438049472" />
+    <state x="640" y="284" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607461302448" />
     <state x="127" y="57" key="MergeDialog" timestamp="1607078580638">
       <screen x="0" y="23" width="1440" height="828" />
     </state>

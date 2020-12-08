@@ -148,16 +148,22 @@ hr {
 .weather {
   display: block;
   position: absolute;
+  background-color: #848fa9;
+  opacity: 0.7;
   width: 200px;
   padding: 10px;
-  border: 1px solid blue;
-  font-size: 10px;
+  border: 1px solid #1a1a56;
+  font-size: 12px;
   z-index: 2;
   right: 0;
   bottom: 0;
 }
 .weather table {
   width: 100%;
+}
+
+.weather i {
+  font-size: 1.5rem;
 }
 
 .grid-about {
