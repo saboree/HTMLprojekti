@@ -60,6 +60,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -101,6 +106,7 @@
       <workItem from="1607349080508" duration="9410000" />
       <workItem from="1607387269564" duration="2937000" />
       <workItem from="1607390242065" duration="185000" />
+      <workItem from="1607418038889" duration="3460000" />
     </task>
     <servers />
   </component>
@@ -149,10 +155,10 @@
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1607078586879" />
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1606128119975" />
     <state x="309" y="160" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1606214839663" />
-    <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607349084705">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607418046370">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1607183146830" />
+    <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1607418046370" />
     <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1607349084705" />
     <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.829@0.23.1440.829" timestamp="1606244774175" />
     <state x="635" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.831@0.23.1440.831" timestamp="1606906179807" />
