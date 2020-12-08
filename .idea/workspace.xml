@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cdeb432-11fc-41c2-b8bd-9594b45f3e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JS/gallery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/calendar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajanvaraus.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajanvaraus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/yes.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tekijat.html" beforeDir="false" afterPath="$PROJECT_DIR$/tekijat.html" afterDir="false" />
     </list>
@@ -110,7 +110,7 @@
       <workItem from="1607387269564" duration="2937000" />
       <workItem from="1607390242065" duration="185000" />
       <workItem from="1607418038889" duration="5658000" />
-      <workItem from="1607426241820" duration="1893000" />
+      <workItem from="1607426241820" duration="6512000" />
     </task>
     <servers />
   </component>
@@ -135,9 +135,10 @@
     </state>
     <state x="278" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.824@0.23.1440.824" timestamp="1607015149609" />
     <state x="278" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.825@0.23.1440.825" timestamp="1607188879600" />
-    <state x="506" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606214742772">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="506" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607428616557">
+      <screen x="0" y="23" width="1440" height="824" />
     </state>
+    <state x="506" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.824@0.23.1440.824" timestamp="1607428616557" />
     <state x="506" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834" timestamp="1606214742772" />
     <state x="640" y="284" key="FileChooserDialogImpl" timestamp="1607333042029">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -159,10 +160,11 @@
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1607423339352" />
     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1606128119975" />
     <state x="309" y="160" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1606214839663" />
-    <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607418046370">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state x="635" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607433680304">
+      <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1607418046370" />
+    <state x="635" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.827@0.23.1440.827" timestamp="1607433680304" />
     <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1607349084705" />
     <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.829@0.23.1440.829" timestamp="1606244774175" />
     <state x="635" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.831@0.23.1440.831" timestamp="1606906179807" />

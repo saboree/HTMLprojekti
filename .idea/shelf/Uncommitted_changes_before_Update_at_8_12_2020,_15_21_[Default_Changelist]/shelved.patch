@@ -1,0 +1,372 @@
+Index: gallery.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <link href=\"Styles/style.css\" type=\"text/css\" rel=\"stylesheet\"/>\n    <meta name=\"description\" content=\"Projekti\">\n    <meta name=\"keywords\" content=\"Projekti\">\n    <meta name=\"author\" content=\"yes\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <!-- Linking Javascript and CSS -->\n    <link href=\"Styles/style.css\" type=\"text/css\" rel=\"stylesheet\"/>\n    <script src=\"JS/script.js\" type=\"text/javascript\"></script>\n      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\"/>\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n    <link rel=\"icon\" href=\"#\" type=\"#\" />\n    <title>Kuvagalleria</title>\n</head>\n   <body>\n\n   <header>\n     <!-- Navigation links -->\n     <div class=\"wrapper head\">\n         <div class=\"menu-btn\">\n             <span></span>\n             <span></span>\n             <span></span>\n         </div>\n         <nav>\n             <ul id=\"Navigation\">\n                 <li><a href=\"index.html\">Etusivu</a></li>\n                 <li><a href=\"gallery.html\">Kuvagalleria</a></li>\n                 <li><a href=\"ajanvaraus.html\">Ajanvaraus</a></li>\n                 <li><a href=\"tekijat.html\">Tiimi</a></li>\n                 <li><a href=\"index.html#contact\">Yhteystiedot</a></li>\n             </ul>\n         </nav>\n     </div>\n\n       <article class=\"topbanner\">\n           <div class=\"container\">\n               <div class=\"topban\">\n                   <i class=\"fas fa-horse-head\"></i>\n                   <h1> — Kuvagalleria — </h1>\n                   <h3>Kuvia meidän tallin hevosista</h3>\n                   <i id=\"second\" class=\"fas fa-horse-head\"></i>\n               </div>\n           </div>\n       </article>\n\n    </header>\n  <div class=\"kg\">\n\n  <div class=\"kgkuvat\">\n<ul id=\"kgul\">\n  <li id=\"kgli\">\n    <img src=\"Images/pic1.jpg\" id=\"kgkuva\">\n  </li>\n  <!-- ... -->\n  <li id=\"kgli\">\n    <img src=\"Images/pic2.jpg\" id=\"kgkuva\">\n  </li>\n  <!-- ... -->\n  <li id=\"kgli\">\n    <img src=\"Images/pic3.jpg\" id=\"kgkuva\">\n  </li>\n  <li id=\"kgli\">\n    <img src=\"Images/heppagif.gif\" id=\"kgkuva\">\n  </li>\n  <li id=\"kgli\">\n    <img src=\"Images/pic4.jpg\" id=\"kgkuva\">\n  </li>\n  <li id=\"kgli\">\n    <img src=\"Images/pic5.jpg\" id=\"kgkuva\">\n  </li>\n  <li id=\"kgli\">\n    <img src=\"Images/pic6.jpg\" id=\"kgkuva\">\n  </li>\n  <li></li>\n</ul>\n</div>\n   </div>\n\n   <footer class=\"footer\">\n     <div class=\"wrapper\">\n       <div class=\"s-media\">\n\n         <br>\n\n         <a href=\"#\" class=\"fa fa-facebook\"></a>\n         <a href=\"#\" class=\"fa fa-instagram\"></a>\n         <a href=\"#\" class=\"fa fa-youtube\"></a>\n\n       </div>\n     </div>\n   </footer>\n<script src=\"JS/hammer.min.js\" type=\"text/javascript\"></script>\n<script src=\"JS/about.js\" type=\"text/javascript\"></script>\n</body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gallery.html	(revision bf9b4d1b63bf1ed5aee5e96b2f832710949f019e)
++++ gallery.html	(date 1607431944773)
+@@ -94,6 +94,7 @@
+      </div>
+    </footer>
+ <script src="JS/hammer.min.js" type="text/javascript"></script>
++<!-- <script src="JS/gallery.js" type="text/javascript"></script> -->
+ <script src="JS/about.js" type="text/javascript"></script>
+ </body>
+ </html>
+Index: Styles/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/* Basic body text style and font */\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  display: flex;\n  min-height: 100vh;\n  flex-direction: column;\n  margin: 0;\n  color: #111211;\n  background: #efeff1;\n  font-family: Verdana;\n  line-height: 1.5;\n  font-size: 16px;\n  font-weight: 500;\n}\n\n.wrapper {\n  max-width: 1110px;\n  padding-left: 15px;\n  padding-right: 15px;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  text-align:center;\n}\n\nsection {\n  padding-top: 10px;\n}\n\n.title3 {\n  font-size: 25px;\n}\n\n/* Webpage navigation bar */\n/* Mobail menu */\n.menu-btn {\n  display:none;\n  width: 30px;\n  height: 30px;\n  position: relative;\n  margin: 12px 12px 12px 12px;\n  overflow: hidden;\n}\n\n.menu-btn span {\n  width: 30px;\n  height: 2.5px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background-color: #192d1e;\n  transition: all 0.5s;\n}\n\n.menu-btn span:nth-of-type(2){\n  top: calc(50% - 7px);\n}\n.menu-btn span:nth-of-type(3){\n  top: calc(50% + 7px);\n}\n\n/* onClick menuBtn */\n.menu-btn.active span:first-of-type {\n  transform: translateX(100%);\n}\n.menu-btn.active span:nth-of-type(2) {\n  top: 50%;\n  transform: translate(-50%, -50%) rotate(45deg);\n}\n.menu-btn.active span:nth-of-type(3) {\n  top: 50%;\n  transform: translate(-50%, -50%) rotate(-45deg);\n}\n\n  /* Full screen menu */\n#Navigation {\n  display: flex;\n  justify-content: center;\n  list-style: none;\n  padding-left: 0;\n  z-index: 2;\n}\n\nli a {\n  margin-left: 10px;\n  margin-right: 10px;\n  font-weight: 600;\n  color: #111211;\n  text-decoration: none;\n  font-size: 18px;\n}\n\nli a:hover {\n  color: #5097A1;\n}\n\n#main {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  flex-direction: column;\n  background-image: url(\"../Images/horses.jpg\");\n  background-size: cover;\n  position: relative;\n  height: 100vh;\n  min-height: 600px;\n  color: #fff;\n}\n\n.image-box_overlay {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.25);\n  z-index: 1;\n}\n\n.title {\n  margin-top: 120px;\n  text-align: center;\n  justify-content: center;\n  font-size: 2.5em;\n}\n\n.logo img{\n  height: 260px;\n  width: auto;\n  opacity: 0.6;\n  margin-bottom: 1.4em;\n}\n\nhr {\n  border: none;\n  background-color: white;\n  width: 20%;\n  color: white;\n  height: 2px;\n  margin-bottom: 20px;\n}\n\n/* Section about Talli */\n.grid-about {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n}\n\n.grid-about .grid-item {\n  text-align: center;\n  margin: 10px 20px 20px 20px;\n}\n\nvideo {\n  width: 580px;\n  height: 370px;\n}\n\n/* Section Miksi me */\n.choice {\n  background-image: url(\"../Images/horses.jpg\");\n  background-size: cover;\n  position: relative;\n}\n\n.grid-choice {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n}\n\n.choice .wrapper {\n  position: relative;\n  z-index: 2;\n}\n\n.choice .title3 {\n  color: white;\n  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n}\n\n.thumb img {\n  width: 26%;\n  height: 26%;\n}\n\n.grid-item-choice {\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n\n.grid-item-choice p {\n  color: white;\n  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n}\n\n/* Section Hinnasto */\n.grid-prices {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n}\n\n.grid-item-price {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 18px;\n}\n\n.price {\n  font-weight: 600;\n}\n\n.card-bg {\n  background-color: #E2F2CE;\n  height: 150px;\n  width: 60%;\n  border-radius: 40px 0 40px 0;\n  box-shadow: 0 0 10px rgba(0,0,0,.15);\n  margin-top: 4%;\n  margin-bottom: 20px;\n}\n\n/* Contact page */\n#contact {\n  background: white;\n}\n\n.grid-contact {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n}\n\n.grid-item-contact {\n  margin: 10px 10px 25px 10px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.grid-item-contact01 {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  padding-top: 16px;\n}\n\n.grid-item-contacts-list i {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.8em;\n  width: 30px;\n  height: 30px;\n  position: relative;\n}\n\n.grid-item-contacts-list .fa-mobile {\n  font-size: 2.2em;\n  height: 26px;\n}\n\n.grid-item-contacts-list p a{\n  text-decoration: none;\n  color: black;\n}\n\n.grid-item-contacts-list p {\n  font-size: 14px;\n}\n\n.grid-item-contact02 {\n  margin-bottom: 0;\n  padding-bottom: 0;\n}\n\n.grid-item-contact iframe {\n  width: 520px;\n  height: 450px;\n}\n\n.form {\n  background-color: #efeff1;\n  //background-color: #E2F2CE;\n  min-height: 450px;\n  height: auto;\n  width: 86%;\n  text-align: center;\n  padding: 22px 20px 10px 20px;\n}\n\n.form-input {\n  height: 50px;\n  border-radius: 30px;\n  border: 1px solid #1D1F20;\n  background-color: white;\n  display: flex;\n  justify-content: start;\n  padding-left: 16px;\n  margin: 15px auto 0 auto;\n  width: 100%;\n}\n\n.form-input textarea {\n  padding-top: 15px;\n}\n\n.form-input input, textarea {\n  font-family: Verdana;\n  border: none;\n  resize: none;\n}\n\n.form-input input, textarea:active, :hover, :focus {\n  outline: 0;\n  outline-offset: 0;\n}\n\n.form-input input {\n  flex: .8;\n}\n\n.form-input i {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 20px;\n  width: 34px;\n  position: relative;\n  top: 50%;\n  transform: translate(0, -60%);\n  padding-right: 15px;\n}\n\n.message {\n  height: 100px;\n  border-radius: 20px;\n}\n\n.message i {\n  top: 22%;\n}\n\n.form .btn-sub {\n  color: #1D1F20;\n  padding: 10px 40px;\n  text-align:center;\n  margin: 20px auto;\n  display: block;\n  background-image: linear-gradient(to left,transparent,transparent 50%,#c1d66d 50%,#c1d66d);\n  background-position: 100% 0;\n  background-size: 200% 100%;\n  transition: all .25s ease-in;\n  font-size: 20px;\n  border: 1px solid #1D1F20;\n  border-radius: 4px;\n}\n\n.form .btn-sub:hover {\n  background-position: 0 0;\n  color: #fff;\n  border: 1px solid white;\n}\n\n/* Section Footer */\n.footer {\n  background: #E6E6E6;\n  height: 200px;\n}\n\n/* Social media */\n.s-media {\n  display: flex;\n  position: relative;\n  justify-content: center;\n  margin-top: 3%;\n}\n\n.s-media a{\n  font-size: 2em;\n  text-align: center;\n  text-decoration: none;\n  border: 2px solid #1D1F20;\n  padding: 7px 5px 7px 5px;\n  margin-right: 5px;\n  width: 50px;\n  height: auto;\n  display: inline-block;\n  border-radius: 50%;\n }\n\n.fa-facebook {\n  color: #1D1F20;\n  padding: 0 15px;\n}\n.fa-facebook:hover {\n  background: #3B5998;\n  color: white;\n  border: 2px solid white;\n}\n\n.fa-instagram {\n  color: #1D1F20;\n}\n\n.fa-instagram:hover {\n  background: #f09433;\n  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);\n  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);\n  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );\n  color: white;\n  border: 2px solid white;\n}\n\n.fa-youtube {\n  color: #1D1F20;\n}\n\n.fa-youtube:hover {\n  background: #bb0000;\n  color: white;\n  border: 2px solid white;\n}\n\n/* ~ Kuvagalleria CSS ~ */\n.kg {\n    display: flex;\n    min-height: 100vh;\n    flex-direction: column;\n    margin: 0;\n    align-items: center;\n    text-align:center;\n    font-family: Verdana;\n    line-height: 1.5;\n    font-size: 16px;\n    font-weight: 500;\n    background: #efeff1;\n}\n.hevonen1{\n  width: 100%;\n  max-height: 750px;\n  overflow: hidden;\n  pointer-events: none;\n}\n.heppa1 {\n  width: 100%;\n}\n.galleriateksti1 {\n  width:100%;\n  height:100%;\n  position: absolute;\n  top: 0;\n  left: 0px;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n  display: flex;\n  color: white;\n}\n.kgkuvat {\n  margin: 1vw;\n}\n\n#kgul {\n  display: flex;\n  flex-wrap: wrap;\n  margin: 2vmin;\n  list-style-type: none;\n}\nul#kgul {\n  padding-inline-start: 0px;\n}\n\n#kgli {\n  height: 40vh;\n  flex-grow: 1;\n  margin: 2vmin;\n}\n\n#kgkuva {\n  max-height: 100%;\n  min-width: 100%;\n  object-fit: cover;\n  vertical-align: bottom;\n  border-radius: 1vmin;\n}\n#kgli:last-child {\n  flex-grow: 10;\n}\n#kgh12 {\n  display: none;\n}\n#kgh1 {\n  font-size: 2.5em;\n}\n\n@media (max-aspect-ratio: 1/1) {\n  #kgli {\n    height: 30vh;\n  }\n}\n\n@media (max-height: 480px) {\n  #kgli {\n    height: 80vh;\n  }\n}\n\n@media (max-aspect-ratio: 1/1) and (max-width: 480px) {\n  #kgul {\n    flex-direction: row;\n  }\n\n  #kgli {\n    height: auto;\n    width: 100%;\n  }\n\n  #kgkuva {\n    width: 100%;\n    max-height: 75vh;\n    min-width: 0;\n  }\n}\n@media (max-aspect-ratio: 1/1) and (max-width: 820px) {\n  #kgh1 {\n    display: none;\n  }\n  #kgh12 {\n    display: block;\n  }\n}\n/* ~ Kuvagalleria CSS loppuu ~ */\n\n/* Sivu Tiimi */\n.our-team {\n  background-color: white;\n}\n\n.container {\n  width: 100%;\n  max-height: 235px;\n  background-color: #efeff1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: wrap;\n}\n\n.topban {\n  width: 100%;\n  background-color: #5e805e;\n  color: #fff;\n  display:flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  align-items: center;\n  padding: 20px 30px;\n  text-align: center;\n}\n\n.topban i {\n  font-size: 1.65rem;\n  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);\n  color: #eee;\n}\n\n.topban #second {\n  margin-left: 98%;\n}\n\n.topban h1 {\n  width: 100%;\n}\n\n.topban h3 {\n  width:100%;\n}\n\n.our-tem-grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n}\n\n.grid-item-team {\n  display: flex;\n  flex-wrap: wrap;\n}\n\n.grid-item-team .grid-card-team {\n  margin: 30px 15px;\n  min-height: 225px;\n}\n\n.grid-item-team .grid-card-team .inner {\n  position: relative;\n  z-index: 1;\n  top: -10%;\n}\n\n.grid-item-team .grid-card-team .inner .info {\n  background-color: #E2F2CE;\n  align-items: center;\n  text-align: center;\n  border-radius: 0 0 8px 8px;\n}\n\n.grid-item-team .grid-card-team img {\n  width: 100%;\n  height: 82%;\n  border-radius: 8px;\n}\n\n.grid-item-team .grid-card-team .inner .info h5 {\n  font-size: 15px;\n  padding: 10px 5px 0 5px;\n  margin: 0;\n}\n\n.grid-item-team .grid-card-team .inner .info p {\n  margin: 4px 4px;\n  padding: 0 5px 8px 5px;\n}\n\n#docs a {\n  text-decoration: none;\n  color: #5e805e;\n  font-size: 18px;\n  font-weight: 600;\n}\n\n#docs a:hover {\n  color: #5097A1;\n}\n\n/* ~ Media query skaalausta ~ */\n@media all and (max-width: 870px) {\n  #Navigation {\n    position: fixed;\n    display: block;\n    padding-top: 20px;\n    top: 38px;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: #a7b5a7;\n    transform: translateX(-100%);\n    z-index: 2;\n  }\n  #Navigation.active {\n    transform: translateX(0);\n  }\n  #Navigation li a {\n    font-size: 22px;\n    margin-top: 35px;\n    line-height: 3.4em;\n    padding-top: 20px;\n  }\n  #Navigation li a:hover{\n    color: white;\n  }\n  .head {\n    display: flex;\n    justify-content: flex-end;\n  }\n  .menu-btn {\n    display: revert;\n  }\n  .card-bg .grid-title {\n    font-size: 16px;\n    padding: 8px 5px 0 5px;\n  }\n  .card-bg {\n    width: 100%;\n    height: 100%;\n    margin: 0 5px 0 5px;\n  }\n  .grid-about {\n    grid-template-columns: repeat(1, 1fr);\n  }\n  video {\n    width: 480px;\n    height: 270px;\n  }\n  .grid-item-contact02 {\n    /*order: 3;*/\n  }\n  .grid-contact {\n    grid-template-columns: repeat(1, 1fr);\n  }\n\n  .our-tem-grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n\n@media all and (max-width: 580px) {\n  video {\n    width: 420px;\n    height: 210px;\n  }\n  .thumb img {\n    width: 40%;\n    height: 40%;\n  }\n  .grid-item-contact iframe {\n    width: 420px;\n    height: 350px;\n  }\n  .s-media {\n    margin-top: 30px;\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Styles/style.css	(revision bf9b4d1b63bf1ed5aee5e96b2f832710949f019e)
++++ Styles/style.css	(date 1607428868788)
+@@ -76,7 +76,7 @@
+   transform: translate(-50%, -50%) rotate(-45deg);
+ }
+ 
+-  /* Full screen menu */
++/* Full screen menu */
+ #Navigation {
+   display: flex;
+   justify-content: center;
+@@ -425,7 +425,7 @@
+   border: 2px solid white;
+ }
+ 
+-/* ~ Kuvagalleria CSS ~ */
++/* ~ Section Gallery ~ */
+ .kg {
+     display: flex;
+     min-height: 100vh;
+@@ -533,9 +533,8 @@
+     display: block;
+   }
+ }
+-/* ~ Kuvagalleria CSS loppuu ~ */
+ 
+-/* Sivu Tiimi */
++/* Page Tiimi */
+ .our-team {
+   background-color: white;
+ }
+Index: tekijat.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"fi\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"description\" content=\"Projekti\">\n    <meta name=\"keywords\" content=\"Projekti\">\n    <meta name=\"author\" content=\"yes\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <!-- Linking Javascript and CSS -->\n    <link href=\"Styles/style.css\" type=\"text/css\" rel=\"stylesheet\"/>\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\"/>\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n    <link rel=\"icon\" href=\"#\" type=\"#\" />\n    <title>Tiimi</title>\n</head>\n<body>\n\n<header>\n    <!-- Navigation links -->\n    <div class=\"wrapper head\">\n        <div class=\"menu-btn\">\n            <span></span>\n            <span></span>\n            <span></span>\n        </div>\n        <nav>\n            <ul id=\"Navigation\">\n                <li><a href=\"index.html\">Etusivu</a></li>\n                <li><a href=\"gallery.html\">Kuvagalleria</a></li>\n                <li><a href=\"ajanvaraus.html\">Ajanvaraus</a></li>\n                <li><a href=\"tekijat.html\">Tiimi</a></li>\n                <li><a href=\"index.html#contact\">Yhteystiedot</a></li>\n            </ul>\n        </nav>\n    </div>\n\n    <article class=\"topbanner\">\n        <div class=\"container\">\n            <div class=\"topban\">\n                <i class=\"fas fa-horse-head\"></i>\n                <h1> — Meidän Tiimi — </h1>\n                <h3>Ketkä ovat tämän sivuston takana</h3>\n                <i id=\"second\" class=\"fas fa-horse-head\"></i>\n            </div>\n        </div>\n    </article>\n\n</header>\n\n<!-- Basic layout -->\n<section class=\"our-team\">\n\n        <div class=\"wrapper\">\n            <div class=\"our-tem-grid\">\n                <div class=\"grid-item-team\">\n                    <div class=\"grid-card-team\">\n                        <img src=\"Images/hx.jpg\" alt=\"team\">\n                        <div class=\"inner\">\n                            <div class=\"info\">\n                                <h5>Alexandra Dedikova</h5>\n                                <p>Koodari</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"grid-item-team\">\n                    <div class=\"grid-card-team\">\n                        <img src=\"Images/lottamustonen.jpg\" alt=\"team\">\n                        <div class=\"inner\">\n                            <div class=\"info\">\n                                <h5>Lotta Mustonen</h5>\n                                <p>Koodari</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"grid-item-team\">\n                    <div class=\"grid-card-team\">\n                        <img src=\"Images/hx.jpg\" alt=\"team\">\n                        <div class=\"inner\">\n                            <div class=\"info\">\n                                <h5>Marko Mandli</h5>\n                                <p>Koodari</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"grid-item-team\">\n                    <div class=\"grid-card-team\">\n                        <img src=\"Images/Tebastian.jpg\" alt=\"team\">\n                        <div class=\"inner\">\n                            <div class=\"info\">\n                                <h5>Teppo Blomholm</h5>\n                                <p>Koodari</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                </div>\n                <div class=\"grid-item-team\"></div>\n                <div class=\"grid-item-team\"></div>\n            </div>\n        </div>\n\n</section>\n\n<section id=\"docs\">\n\n    <div class=\"wrapper\">\n        <a href=\"https://drive.google.com/file/d/1EEfnhTi8Pf3Vy96JMeMA2ggWgMMBfY-m/view?usp=sharing\" target=\"_blank\"><h4>Video suunitelma</h4></a>\n        <a href=\"https://drive.google.com/file/d/1DgxMvGhIcPlybwr-7fxCXhQcxxGNZGzd/view?usp=sharing\" target=\"_blank\"><h4>Videoprojektin kuvakäsikirjoitus</h4></a>\n        <a href=\"https://drive.google.com/file/d/1ogB1WoN-1LClWxOs7yqaKHIPZaU6PuT8/view?usp=sharing\" target=\"_blank\"><h4>Videoselostushirnahdus</h4></a>\n        <a href=\"https://drive.google.com/file/d/15oclUlQXGDgSChKmUyrDfQbMK5kShKkx/view?usp=sharing\" target=\"_blank\"><h4>Web synapsis</h4></a>\n    </div>\n\n\n</section>\n\n\n<!-- Footer  -->\n<footer class=\"footer\">\n    <div class=\"wrapper\">\n        <div class=\"s-media\">\n            <a href=\"#\" class=\"fa fa-facebook\"></a>\n            <a href=\"#\" class=\"fa fa-instagram\"></a>\n            <a href=\"#\" class=\"fa fa-youtube\"></a>\n        </div>\n    </div>\n</footer>\n\n<script src=\"JS/script.js\" type=\"text/javascript\"></script>\n<script src=\"JS/about.js\" type=\"text/javascript\"></script>\n</body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- tekijat.html	(revision bf9b4d1b63bf1ed5aee5e96b2f832710949f019e)
++++ tekijat.html	(date 1607429461882)
+@@ -58,7 +58,7 @@
+                         <div class="inner">
+                             <div class="info">
+                                 <h5>Alexandra Dedikova</h5>
+-                                <p>Koodari</p>
++                                <p>Koodari Ryhmä 2</p>
+                             </div>
+                         </div>
+                     </div>
+@@ -69,7 +69,7 @@
+                         <div class="inner">
+                             <div class="info">
+                                 <h5>Lotta Mustonen</h5>
+-                                <p>Koodari</p>
++                                <p>Koodari Ryhmä 2</p>
+                             </div>
+                         </div>
+                     </div>
+@@ -80,7 +80,7 @@
+                         <div class="inner">
+                             <div class="info">
+                                 <h5>Marko Mandli</h5>
+-                                <p>Koodari</p>
++                                <p>Koodari Ryhmä 2</p>
+                             </div>
+                         </div>
+                     </div>
+@@ -91,7 +91,7 @@
+                         <div class="inner">
+                             <div class="info">
+                                 <h5>Teppo Blomholm</h5>
+-                                <p>Koodari</p>
++                                <p>Koodari Ryhmä 2</p>
+                             </div>
+                         </div>
+                     </div>
+Index: Styles/yes.css
+===================================================================
+--- Styles/yes.css	(revision bf9b4d1b63bf1ed5aee5e96b2f832710949f019e)
++++ Styles/yes.css	(revision bf9b4d1b63bf1ed5aee5e96b2f832710949f019e)
+@@ -1,143 +0,0 @@
+-.bss-slides{
+-  margin-top: -20px;
+-  margin-left: -40px;
+-  position: relative;
+-  display: block;
+-  line-height: 0;/*removes the gap if you put a border on the slideshow div*/
+-}
+-figcaption {
+-  line-height: 1.5; /* restores line-height to the child element*/
+-}
+-.bss-slides:focus{
+- outline: 0;
+-}
+-.bss-slides figure{
+-  position: absolute;
+-  top: 0;
+-  width: 100%;
+-}
+-.bss-slides figure:first-child{
+-  position: relative;
+-}
+-.bss-slides figure img{
+-  opacity: 0;
+-  -webkit-transition: opacity 1.2s;
+-  transition: opacity 1.2s;
+-  -webkit-backface-visibility: hidden;
+-  backface-visibility: hidden;
+-}
+-.bss-slides .bss-show{
+-  z-index: 2;
+-}
+-.bss-slides .bss-show img{
+-  opacity: 1;
+-  -webkit-backface-visibility: hidden;
+-  backface-visibility: hidden;
+-  position: relative;
+-}
+-
+-.bss-slides figcaption{
+-  position: absolute;
+-  font-family: sans-serif;
+-  font-size: .8em;
+-  bottom: .75em;
+-  right: .35em;
+-  padding: .25em;
+-  color: #fff;
+-  background: #000;
+-  background: rgba(0,0,0, .25);
+-  border-radius: 2px;
+-  opacity: 0;
+-  -webkit-transition: opacity 1.2s;
+-  transition: opacity 1.2s;
+-}
+-.bss-slides .bss-show figcaption{
+-  z-index: 3;
+-  opacity: 1;
+-}
+-.bss-slides figcaption a{
+-  color: #fff;
+-}
+-.bss-next, .bss-prev{
+-  color: #fff;
+-  position: absolute;
+-  background: #000;
+-  background: rgba(0,0,0, .6);
+-  top: 50%;
+-  z-index: 4;
+-  font-size: 2em;
+-  margin-top: -1.2em;
+-  opacity: .3;
+-  -webkit-user-select: none;
+-  -moz-user-select: none;
+-  -ms-user-select: none;
+-  user-select: none;
+-}
+-.bss-next:hover, .bss-prev:hover{
+-  cursor: pointer;
+-  opacity: 1;
+-}
+-.bss-next{
+-  right: -1px;
+-  padding: 10px 5px 15px 10px;
+-  border-top-left-radius: 3px;
+-  border-bottom-left-radius: 3px;
+-}
+-.bss-prev{
+-  left: 0;
+-  padding: 10px 10px 15px 5px;
+-  border-top-right-radius: 3px;
+-  border-bottom-right-radius: 3px;
+-}
+-.bss-fullscreen{
+-  display: block;
+-  width: 32px;
+-  height: 32px;
+-  background: rgba(0,0,0,.4) url(../img/arrows-alt_ffffff_64.png);
+-  -webkit-background-size: contain;
+-  background-size: contain;
+-  position: absolute;
+-  top: 5px;
+-  left: 5px;
+-  cursor: pointer;
+-  opacity: .3;
+-}
+-.bss-fullscreen:hover{
+-  opacity: .8;
+-}
+-:-webkit-full-screen .bss-fullscreen{
+-    background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+-    -webkit-background-size: contain;
+-    background-size: contain;
+-}
+-:-moz-full-screen .bss-fullscreen{
+-    background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+-    background-size: contain;
+-}
+-:-ms-fullscreen .bss-fullscreen{
+-    background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+-    background-size: contain;
+-}
+-:full-screen .bss-fullscreen{
+-    background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+-    -webkit-background-size: contain;
+-    background-size: contain;
+-}
+-:-webkit-full-screen .bss-fullscreen{
+-    background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+-    -webkit-background-size: contain;
+-    background-size: contain;
+-}
+-:-moz-full-screen .bss-fullscreen{
+-    background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+-    background-size: contain;
+-}
+-:-ms-fullscreen .bss-fullscreen{
+-    background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+-    background-size: contain;
+-}
+-:fullscreen .bss-fullscreen{
+-    background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+-    -webkit-background-size: contain;
+-    background-size: contain;
+-}
+Index: JS/gallery.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- JS/gallery.js	(date 1607431839106)
++++ JS/gallery.js	(date 1607431839106)
+@@ -0,0 +1,57 @@
++/* Array of Pictures */
++const picArray = [
++    {
++        'title': 'Title 3',
++        'filename': 'Images/pic1.jpg',
++    },
++    {
++        'title': 'Title 3',
++        'filename': 'Images/pic2.jpg',
++    },
++    {
++        'title': 'Title 3',
++        'filename': 'Images/pic3.jpg',
++    },
++    {
++        'title': 'Title 3',
++        'filename': 'Images/heppagif.gif',
++    },
++    {
++        'title': 'Title 3',
++        'filename': 'Images/pic4.jpg',
++    },
++    {
++        'title': 'Title 3',
++        'filename': 'Images/pic5.jpg',
++    },
++    {
++        'title': 'Title 3',
++        'filename': 'Images/pic6.jpg',
++    },
++];
++
++// etsitääm main-elementti html-sivulta
++const main = document.querySelector('.kgkuvat');
++
++// käydään jäsentaulukko läpi alkio kerrallaan.
++for (let i = 0; i < picArray.length; i++) {
++    // luodaan tarvittavat elementit
++    const header = document.createElement('header');
++    const ul = document.createElement('ul');
++    const li = document.createElement('li');
++    const h2 = document.createElement('h2');
++    const img = document.createElement('img');
++
++    // haetaan elementeille arvot taulukosta
++    h2.innerText = picArray[i].title;
++    img.src = picArray[i].filename;
++
++    // lisätään elementeille niiden lapsielementit
++    header.appendChild(h2);
++
++    ul.appendChild(li);
++    li.appendChild(img);
++
++    // lisätään luotu article-elementti main-elementin lapseksi
++    main.appendChild(ul);
++}
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"8cdeb432-11fc-41c2-b8bd-9594b45f3e20\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Styles/calendar.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Styles/calendar.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Styles/style.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Styles/style.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/ajanvaraus.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ajanvaraus.html\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/gallery.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/gallery.html\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/tekijat.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/tekijat.html\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"CSS File\" />\n        <option value=\"JavaScript File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GithubPullRequestsUISettings\">\n    <option name=\"hiddenUrls\">\n      <set>\n        <option value=\"https://github.com/saboree/HTMLprojekti\" />\n      </set>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"1kZaN5NLR0xROMC0Pk2X1SHzITS\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/Src\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"8cdeb432-11fc-41c2-b8bd-9594b45f3e20\" name=\"Default Changelist\" comment=\"\" />\n      <created>1605910524107</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1605910524107</updated>\n      <workItem from=\"1605910525302\" duration=\"311000\" />\n      <workItem from=\"1605910901216\" duration=\"39000\" />\n      <workItem from=\"1606125779502\" duration=\"2497000\" />\n      <workItem from=\"1606149271558\" duration=\"51000\" />\n      <workItem from=\"1606204616464\" duration=\"1648000\" />\n      <workItem from=\"1606214623996\" duration=\"6126000\" />\n      <workItem from=\"1606234825859\" duration=\"2956000\" />\n      <workItem from=\"1606244771674\" duration=\"76000\" />\n      <workItem from=\"1606300403622\" duration=\"1122000\" />\n      <workItem from=\"1606321358155\" duration=\"505000\" />\n      <workItem from=\"1606494241986\" duration=\"472000\" />\n      <workItem from=\"1606497622546\" duration=\"116000\" />\n      <workItem from=\"1606502378200\" duration=\"186000\" />\n      <workItem from=\"1606761262629\" duration=\"58000\" />\n      <workItem from=\"1606852893526\" duration=\"4537000\" />\n      <workItem from=\"1606896341622\" duration=\"7600000\" />\n      <workItem from=\"1606913346694\" duration=\"10767000\" />\n      <workItem from=\"1606933592796\" duration=\"200000\" />\n      <workItem from=\"1606942952577\" duration=\"7130000\" />\n      <workItem from=\"1606986329135\" duration=\"6833000\" />\n      <workItem from=\"1607016909941\" duration=\"81000\" />\n      <workItem from=\"1607019277382\" duration=\"43000\" />\n      <workItem from=\"1607078183016\" duration=\"440000\" />\n      <workItem from=\"1607078704295\" duration=\"21000\" />\n      <workItem from=\"1607104432435\" duration=\"4617000\" />\n      <workItem from=\"1607114465307\" duration=\"24000\" />\n      <workItem from=\"1607183142838\" duration=\"9491000\" />\n      <workItem from=\"1607196392095\" duration=\"93000\" />\n      <workItem from=\"1607333044307\" duration=\"257000\" />\n      <workItem from=\"1607348254639\" duration=\"5000\" />\n      <workItem from=\"1607349080508\" duration=\"9410000\" />\n      <workItem from=\"1607387269564\" duration=\"2937000\" />\n      <workItem from=\"1607390242065\" duration=\"185000\" />\n      <workItem from=\"1607418038889\" duration=\"5658000\" />\n      <workItem from=\"1607426241820\" duration=\"1893000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"278\" y=\"81\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1607188879600\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"825\" />\n    </state>\n    <state x=\"278\" y=\"81\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.824@0.23.1440.824\" timestamp=\"1607015149609\" />\n    <state x=\"278\" y=\"81\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.825@0.23.1440.825\" timestamp=\"1607188879600\" />\n    <state x=\"506\" y=\"173\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog\" timestamp=\"1606214742772\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"834\" />\n    </state>\n    <state x=\"506\" y=\"173\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834\" timestamp=\"1606214742772\" />\n    <state x=\"640\" y=\"284\" key=\"FileChooserDialogImpl\" timestamp=\"1607333042029\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"640\" y=\"284\" key=\"FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1607333042029\" />\n    <state x=\"127\" y=\"57\" key=\"MergeDialog\" timestamp=\"1607078580638\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"828\" />\n    </state>\n    <state x=\"127\" y=\"57\" key=\"MergeDialog/0.23.1440.828@0.23.1440.828\" timestamp=\"1607078580638\" />\n    <state x=\"341\" y=\"167\" key=\"MultipleFileMergeDialog\" timestamp=\"1607078580692\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"828\" />\n    </state>\n    <state x=\"341\" y=\"167\" key=\"MultipleFileMergeDialog/0.23.1440.828@0.23.1440.828\" timestamp=\"1607078580692\" />\n    <state x=\"309\" y=\"159\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1607423339352\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"828\" />\n    </state>\n    <state x=\"309\" y=\"159\" key=\"Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825\" timestamp=\"1607376043857\" />\n    <state x=\"309\" y=\"159\" key=\"Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827\" timestamp=\"1606857922483\" />\n    <state x=\"309\" y=\"159\" key=\"Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828\" timestamp=\"1607423339352\" />\n    <state x=\"309\" y=\"159\" key=\"Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829\" timestamp=\"1606128119975\" />\n    <state x=\"309\" y=\"160\" key=\"Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834\" timestamp=\"1606214839663\" />\n    <state x=\"635\" y=\"375\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1607418046370\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"825\" />\n    </state>\n    <state x=\"635\" y=\"375\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825\" timestamp=\"1607418046370\" />\n    <state x=\"635\" y=\"377\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828\" timestamp=\"1607349084705\" />\n    <state x=\"635\" y=\"377\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.829@0.23.1440.829\" timestamp=\"1606244774175\" />\n    <state x=\"635\" y=\"378\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.831@0.23.1440.831\" timestamp=\"1606906179807\" />\n    <state x=\"836\" y=\"52\" width=\"604\" height=\"735\" key=\"find.popup\" timestamp=\"1607190403740\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"825\" />\n    </state>\n    <state x=\"836\" y=\"52\" width=\"604\" height=\"735\" key=\"find.popup/0.23.1440.825@0.23.1440.825\" timestamp=\"1607190403740\" />\n    <state x=\"770\" y=\"175\" width=\"670\" height=\"672\" key=\"search.everywhere.popup\" timestamp=\"1607388256256\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"824\" />\n    </state>\n    <state x=\"770\" y=\"175\" width=\"670\" height=\"672\" key=\"search.everywhere.popup/0.23.1440.824@0.23.1440.824\" timestamp=\"1607388256256\" />\n    <state x=\"770\" y=\"176\" width=\"670\" height=\"676\" key=\"search.everywhere.popup/0.23.1440.829@0.23.1440.829\" timestamp=\"1606219037333\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision bf9b4d1b63bf1ed5aee5e96b2f832710949f019e)
++++ .idea/workspace.xml	(date 1607433680389)
+@@ -20,10 +20,10 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="8cdeb432-11fc-41c2-b8bd-9594b45f3e20" name="Default Changelist" comment="">
++      <change afterPath="$PROJECT_DIR$/JS/gallery.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Styles/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/calendar.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/style.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ajanvaraus.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajanvaraus.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Styles/yes.css" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/tekijat.html" beforeDir="false" afterPath="$PROJECT_DIR$/tekijat.html" afterDir="false" />
+     </list>
+@@ -110,7 +110,7 @@
+       <workItem from="1607387269564" duration="2937000" />
+       <workItem from="1607390242065" duration="185000" />
+       <workItem from="1607418038889" duration="5658000" />
+-      <workItem from="1607426241820" duration="1893000" />
++      <workItem from="1607426241820" duration="5348000" />
+     </task>
+     <servers />
+   </component>
+@@ -135,9 +135,10 @@
+     </state>
+     <state x="278" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.824@0.23.1440.824" timestamp="1607015149609" />
+     <state x="278" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.825@0.23.1440.825" timestamp="1607188879600" />
+-    <state x="506" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606214742772">
+-      <screen x="0" y="23" width="1440" height="834" />
++    <state x="506" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607428616557">
++      <screen x="0" y="23" width="1440" height="824" />
+     </state>
++    <state x="506" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.824@0.23.1440.824" timestamp="1607428616557" />
+     <state x="506" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834" timestamp="1606214742772" />
+     <state x="640" y="284" key="FileChooserDialogImpl" timestamp="1607333042029">
+       <screen x="0" y="0" width="1920" height="1040" />
+@@ -159,10 +160,11 @@
+     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1607423339352" />
+     <state x="309" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1606128119975" />
+     <state x="309" y="160" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1606214839663" />
+-    <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607418046370">
+-      <screen x="0" y="23" width="1440" height="825" />
++    <state x="635" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607433680304">
++      <screen x="0" y="23" width="1440" height="827" />
+     </state>
+     <state x="635" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1607418046370" />
++    <state x="635" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.827@0.23.1440.827" timestamp="1607433680304" />
+     <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1607349084705" />
+     <state x="635" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.829@0.23.1440.829" timestamp="1606244774175" />
+     <state x="635" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.831@0.23.1440.831" timestamp="1606906179807" />
