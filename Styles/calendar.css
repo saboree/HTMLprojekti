@@ -11,8 +11,7 @@ html {
 
 .container {
     width: 100%;
-    min-height: 100vh;
-    /* height: 1000px; */
+    min-height: 150vh;
     background-color: #efeff1;
     color: #eee;
     display: flex;
@@ -31,6 +30,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
+    margin: 0;
     text-align: center;
 }
 
@@ -59,24 +59,17 @@ html {
     width:100%;
 }
 
-
-
 /* Lomake */
 
 .field {
     display: none;
     width: 45rem;
     height: 52rem;
-    padding: 20px 20px 0 20px;
+    padding: 0 20px;
     background-color: #5e805e;
-    margin-right: 100px;
     box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.4);
 }
 
-.formContainer {
-    display:flex;
-    flex-wrap: wrap;
-}
 
 input[type=text], input[type=email] {
     width: 100%;
@@ -104,7 +97,7 @@ select {
     background-color: #a7b5a7;
     font-size: 20px;
     color: #192913;
-    padding: 14px 20px;
+    padding: 8px 20px;
     margin: 30px 2px;
     border-radius: 4px;
     cursor: pointer;
@@ -115,7 +108,7 @@ select {
     background-color: #7fd284;
     font-size: 20px;
     color: #192913;
-    padding: 14px 20px;
+    padding: 8px 20px;
     margin: 30px 0;
     border-radius: 4px;
     cursor: pointer;
@@ -153,8 +146,7 @@ span {
     display: none;
     width: 45rem;
     height: 52rem;
-    margin-right: 100px;
-    padding: 20px;
+    padding: 0 20px;
     background-color: #a2a194;
     border: 2px double #5e805e;
     box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.4);
@@ -178,7 +170,7 @@ span {
     background-color: #86856b;
     font-size: 20px;
     color: #fff;
-    padding: 14px 20px;
+    padding: 10px 20px;
     margin: 50px 0;
     border-radius: 4px;
     cursor: pointer;
@@ -305,25 +297,16 @@ span {
 
 /* Sivun responsiivisus */
 
-@media only screen and (max-width: 1075px) {
-    .field, .final {
-        margin-right: 5px;
+@media only screen and (max-width: 1130px) {
+    .container {
+        min-height: 200vh;
 
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .field, .final {
-        margin-right: 5px;
-
-    }
-}
-
-@media only screen and (max-width: 980px) {
-    .field, .final {
-        margin-right: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
+@media only screen and (max-width: 1130px) {
+    .final h2 {
+        margin-top: 30px;
 
     }
 }

@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cdeb432-11fc-41c2-b8bd-9594b45f3e20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2020__12_16__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2020__12_16__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Styles/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/calendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajanvaraus.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajanvaraus.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +108,7 @@
       <workItem from="1607418038889" duration="5658000" />
       <workItem from="1607426241820" duration="1893000" />
       <workItem from="1607435730803" duration="658000" />
-      <workItem from="1607438052523" duration="1699000" />
+      <workItem from="1607438052523" duration="6370000" />
     </task>
     <servers />
   </component>
