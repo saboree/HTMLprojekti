@@ -145,27 +145,6 @@ hr {
 }
 
 /* Section about Talli */
-.weather {
-  display: block;
-  position: absolute;
-  background-color: #848fa9;
-  opacity: 0.7;
-  width: 200px;
-  padding: 10px;
-  border: 1px solid #1a1a56;
-  font-size: 12px;
-  z-index: 2;
-  right: 0;
-  bottom: 0;
-}
-.weather table {
-  width: 100%;
-}
-
-.weather i {
-  font-size: 1.5rem;
-}
-
 .grid-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -297,6 +276,12 @@ video {
   padding-bottom: 0;
 }
 
+.grid-item-contact05 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 20px 10px 20px 10px;
+}
+
 .grid-item-contact iframe {
   width: 520px;
   height: 450px;
@@ -383,6 +368,47 @@ video {
   background-position: 0 0;
   color: #fff;
   border: 1px solid white;
+}
+
+.weather {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Images/weatherbg.jpeg");
+  background-size: cover;
+  width: 40%;
+  height: 84%;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 14px;
+  color: white;
+  z-index: 2;
+}
+
+.weather h1 {
+  text-transform: uppercase;
+  text-align: center;
+  width:100%;
+}
+
+.weather table {
+  width: 100%;
+  text-align: center;
+}
+
+.weather table tr td h3{
+  font-size: 15px;
+}
+
+.weather img {
+  margin: 5px;
+  width: 50px;
+  height: 55px;
+}
+
+.weather i {
+  font-size: 1.2rem;
 }
 
 /* Section Footer */
@@ -698,7 +724,16 @@ ul#kgul {
     height: 270px;
   }
   .grid-item-contact02 {
-    /*order: 3;*/
+    grid-column: 1;
+    grid-row: 4;
+    margin: 5px 10px;
+  }
+  .grid-item-contact05 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .grid-item-contact05 .weather {
+    width: 80%;
   }
   .grid-contact {
     grid-template-columns: repeat(1, 1fr);
