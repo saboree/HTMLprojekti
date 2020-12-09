@@ -50,37 +50,45 @@ const validateFields = () => {
         error += 1;
         kloInput.style.color = "red";
         kloInput.style.border = "2px solid red";
+        kloInput.style.padding = "6px 15px";
     } else {
         // jos aika on selectissa valitsettu
         kloInput.style.color = "black";
         kloInput.style.border = "none";
+        kloInput.style.padding = "8px 15px";
     }
     // jos select varauksen kesto ei ole valitsettu
     if (kestoInput.value === "0") {
         error += 1;
         kestoInput.style.color = "red";
         kestoInput.style.border = "2px solid red";
+        kestoInput.style.padding = "6px 15px";
     } else {
         // jos select kestp on valitsettu
         kestoInput.style.color = "black";
         kestoInput.style.border = "black";
+        kestoInput.style.padding = "8px 15px";
     }
 
     // jos etunime ei ole annettu
     if (etunimiInput.value === "") {
         error += 1;
         etunimiInput.style.border = "2px solid red";
+        etunimiInput.style.padding = "10px 20px";
     } else {
         // jos etunime on annettu
         etunimiInput.style.border = "black";
+        etunimiInput.style.padding = "12px 20px";
     }
     // jos sukunimea ei ole annettu
     if (sukunimiInput.value === "") {
         error += 1;
         sukunimiInput.style.border = "2px solid red";
+        sukunimiInput.style.padding = "10px 20px";
     } else {
         // jos sulkunimi on annettu
         sukunimiInput.style.border = "black";
+        sukunimiInput.style.padding = "12px 20px";
     }
     // funktio tulostaa virheiden summan
     return error;
