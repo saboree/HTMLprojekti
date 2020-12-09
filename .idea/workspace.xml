@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cdeb432-11fc-41c2-b8bd-9594b45f3e20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2020__12_16__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2020__12_16__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_12_2020__3_27__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_12_2020__3_27__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +115,7 @@
       <workItem from="1607461304975" duration="2780000" />
       <workItem from="1607512351846" duration="1107000" />
       <workItem from="1607519765305" duration="2852000" />
+      <workItem from="1607529773915" duration="2047000" />
     </task>
     <servers />
   </component>
@@ -158,10 +160,10 @@
     </state>
     <state x="203" y="223" width="1075" height="588" key="DiffContextDialog/0.23.1440.825@0.23.1440.825" timestamp="1607478213739" />
     <state x="203" y="223" width="1075" height="590" key="DiffContextDialog/0.23.1440.828@0.23.1440.828" timestamp="1607478512144" />
-    <state x="640" y="284" key="FileChooserDialogImpl" timestamp="1607461302448">
+    <state x="640" y="284" key="FileChooserDialogImpl" timestamp="1607529771410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="284" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607461302448" />
+    <state x="640" y="284" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607529771410" />
     <state x="127" y="57" key="MergeDialog" timestamp="1607078580638">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
