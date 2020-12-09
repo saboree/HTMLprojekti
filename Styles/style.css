@@ -632,8 +632,9 @@ ul#kgul {
 }
 
 .grid-item-team .grid-card-team {
-  margin: 30px 15px;
+  margin: 30px 10px;
   min-height: 225px;
+  width: 100%;
 }
 
 .grid-item-team .grid-card-team .inner {
