@@ -8,11 +8,17 @@ menuBtn.addEventListener('click', function (){
 });
 
 //Background for weather widget
+let element = document.querySelector('.weather');
 theTime = new Date();
 theHour = theTime.getHours();
+
 if(theHour > 6 && theHour < 18){
-    document.write('<article background="/Images/weatherbg.jpeg" text="day" >');
+    //element.style.backgroundImage = "url(../Images/weatherbg.jpeg)";
+    //TAI
+    //document.write('<article background="/Images/weatherbg.jpeg" text="day" >');
 }
 else{
-    document.write('<article background="/Images/starsBg.jpg" text="night" >');
+    //element.style.backgroundImage = "url(../Images/starsBg.jpeg)";
+    //TAI
+    //document.write('<article background="/Images/starsBg.jpg" text="night" >');
 }

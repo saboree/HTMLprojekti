@@ -274,6 +274,9 @@ video {
 .grid-item-contact02 {
   margin-bottom: 0;
   padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .grid-item-contact05 {
