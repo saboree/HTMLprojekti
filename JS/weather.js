@@ -88,7 +88,7 @@ const vastaus = (weatherData) => {
 
     // kutsutaan funktio, joka luo weather widgetin backgroundin
     weatherBackground();
-    
+
     // kutsutaan funktio taulukon kuvamiseksi
     weatherInfo(weatherData);
 

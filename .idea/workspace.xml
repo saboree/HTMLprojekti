@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cdeb432-11fc-41c2-b8bd-9594b45f3e20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2020__12_16__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_2020__12_16__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_12_2020__18_50__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_12_2020__18_50__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_12_2020__3_27__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_12_2020__3_27__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/calendar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/weather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tekijat.html" beforeDir="false" afterPath="$PROJECT_DIR$/tekijat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +116,7 @@
       <workItem from="1607519765305" duration="2852000" />
       <workItem from="1607529773915" duration="2047000" />
       <workItem from="1607535726406" duration="402000" />
-      <workItem from="1607536133015" duration="374000" />
+      <workItem from="1607536133015" duration="2655000" />
     </task>
     <servers />
   </component>
